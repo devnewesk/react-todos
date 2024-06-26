@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0d0d;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+.todos-text {
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  width: 85%;
+}
+.todos-text:focus {
+  border: none;
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+.todos-button {
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(221, 13, 13);
+  margin-left: 2rem;
+  color: #ddd;
+}
+.todos-button:hover {
+  background-color: rgb(250, 20, 20);
+}
+.todo {
+  font-size: 1.2rem;
+  background-color: #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.todos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+.form {
+  width: 100%;
+}
+.remove-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+.btn-edit {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.button-group {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.edit-input {
+  width: 85%;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+}
+@media screen and (max-width: 940px) {
+  .todos-text {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .todos-button {
+    width: 95%;
+    margin-left: 0.2rem;
+  }
+}
